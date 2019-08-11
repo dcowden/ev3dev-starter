@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-from ev3dev2.motor import *
-from ev3dev2.sensor import INPUT_1
-from ev3dev2.sensor.lego import TouchSensor
-from ev3dev2.led import Leds
+#from ev3dev2.motor import *
+#from ev3dev2.sensor import INPUT_1
+#from ev3dev2.sensor.lego import TouchSensor
+#from ev3dev2.led import Leds
+from ev3dev2.motor import MoveDifferential,SpeedPercent,OUTPUT_B,OUTPUT_C
 from ev3dev2.wheel import Wheel
 #see https://python-ev3dev.readthedocs.io/en/ev3dev-stretch/motors.html
 
@@ -12,7 +13,7 @@ class BaloonWheel(Wheel):
         Wheel.__init__(self,56,28)
 
 def inches_to_mm(inches):
-    return inches * 25.4;
+    return inches * 25.4
 
 STUD_MM=8
 
